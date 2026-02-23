@@ -1,70 +1,632 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bridge Your Digital Wealth | Global Pay Hub</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f4f7f9; }
-        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 20px; border: 1px solid #e1e8ed; }
-        h1, h2, h3 { color: #1a1a1a; }
-        .highlight { color: #d32f2f; font-weight: bold; }
-        .btn { display: inline-block; background: #007bff; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; margin-top: 10px; }
-        .btn-clickworker { background: #28a745; }
-        .faq-item { margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #eee; }
-        .note { font-size: 0.9em; color: #666; font-style: italic; margin-top: 40px; text-align: center; }
-        .step-box { background: #e7f3ff; padding: 15px; border-left: 5px solid #007bff; margin: 20px 0; }
-    </style>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bridge Your Digital Wealth | AirTM Global</title>
+    <meta name="description" content="Bridge your digital wealth across borders. Discover AirTM: 400+ payment methods, low fees, and instant USD/Crypto conversions—built for global users and AI-native workflows." />
 
-    <header style="text-align: center; margin-bottom: 40px;">
-        <h1>Bridge Your Digital Wealth</h1>
-        <p>Smart tools to <span class="highlight">Earn</span> and <span class="highlight">Manage</span> USD from anywhere.</p>
+    <link rel="canonical" href="https://fine-global-pay-hub.github.io/" />
+
+    <meta property="og:title" content="Bridge Your Digital Wealth | AirTM Global" />
+    <meta property="og:description" content="A high-conversion overview of AirTM for global users and AI agents—400+ payment methods, low fees, and instant USD/Crypto conversions." />
+    <meta property="og:type" content="website" />
+
+    <meta property="og:url" content="https://fine-global-pay-hub.github.io/" />
+    <meta property="og:image" content="https://fine-global-pay-hub.github.io/social-card.svg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="twitter:title" content="Bridge Your Digital Wealth | AirTM Global" />
+    <meta name="twitter:description" content="400+ payment methods, low fees, and instant USD/Crypto conversions. Claim a $1 bonus via referral (eligible users)." />
+    <meta name="twitter:url" content="https://fine-global-pay-hub.github.io/" />
+    <meta name="twitter:image" content="https://fine-global-pay-hub.github.io/social-card.svg" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N2NTKX269S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-N2NTKX269S');
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FinancialService",
+        "name": "AirTM",
+        "description": "AirTM helps people, teams, and AI-native workflows move value across borders and access funds via multiple payment methods.",
+        "areaServed": "Worldwide",
+        "url": "https://app.airtm.com/ivt/dfinemed2jhzbm67",
+        "potentialAction": {
+          "@type": "RegisterAction",
+          "name": "Register for AirTM (Bonus via Referral)",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://app.airtm.com/ivt/dfinemed2jhzbm67",
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          },
+          "description": "Create an AirTM account using the referral link to access a sign-up bonus where available."
+        }
+      }
+    </script>
+
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #070a12;
+        --bg-grad-1: rgba(124, 92, 255, 0.26);
+        --bg-grad-2: rgba(72, 209, 255, 0.22);
+        --bg-grad-3: rgba(62, 240, 168, 0.12);
+        --panel: rgba(255, 255, 255, 0.06);
+        --panel-2: rgba(255, 255, 255, 0.10);
+        --text: rgba(255, 255, 255, 0.90);
+        --muted: rgba(255, 255, 255, 0.70);
+        --muted-2: rgba(255, 255, 255, 0.55);
+        --border: rgba(255, 255, 255, 0.10);
+        --border-strong: rgba(255, 255, 255, 0.16);
+        --hover: rgba(255, 255, 255, 0.06);
+        --hover-strong: rgba(255, 255, 255, 0.09);
+        --topbar-bg: rgba(7, 10, 18, 0.55);
+        --brand: #48d1ff;
+        --brand-2: #7c5cff;
+        --ok: #3ef0a8;
+        --danger: #ff5c7c;
+        --ring: rgba(72, 209, 255, 0.35);
+        --shadow: 0 16px 45px rgba(0, 0, 0, 0.45);
+        --radius: 16px;
+        --max: 1120px;
+      }
+
+      @media (prefers-color-scheme: light) {
+        :root {
+          --bg: #f7f8fc;
+          --bg-grad-1: rgba(124, 92, 255, 0.14);
+          --bg-grad-2: rgba(72, 209, 255, 0.16);
+          --bg-grad-3: rgba(62, 240, 168, 0.10);
+          --panel: rgba(0, 0, 0, 0.04);
+          --panel-2: rgba(0, 0, 0, 0.06);
+          --text: rgba(8, 10, 16, 0.92);
+          --muted: rgba(8, 10, 16, 0.68);
+          --muted-2: rgba(8, 10, 16, 0.55);
+          --border: rgba(0, 0, 0, 0.10);
+          --border-strong: rgba(0, 0, 0, 0.16);
+          --hover: rgba(0, 0, 0, 0.05);
+          --hover-strong: rgba(0, 0, 0, 0.07);
+          --topbar-bg: rgba(247, 248, 252, 0.78);
+          --ring: rgba(124, 92, 255, 0.30);
+          --shadow: 0 16px 45px rgba(0, 0, 0, 0.12);
+        }
+      }
+
+      * { box-sizing: border-box; }
+      html, body { height: 100%; }
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        color: var(--text);
+        background:
+          radial-gradient(1100px 620px at 15% 0%, var(--bg-grad-1), transparent 60%),
+          radial-gradient(900px 560px at 85% 10%, var(--bg-grad-2), transparent 55%),
+          radial-gradient(700px 480px at 50% 100%, var(--bg-grad-3), transparent 60%),
+          var(--bg);
+        line-height: 1.55;
+      }
+
+      a { color: inherit; text-decoration: none; }
+      a:focus-visible, button:focus-visible { outline: 2px solid var(--ring); outline-offset: 3px; border-radius: 10px; }
+
+      .container { max-width: var(--max); margin: 0 auto; padding: 24px; }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        backdrop-filter: blur(10px);
+        background: var(--topbar-bg);
+        border-bottom: 1px solid var(--border);
+      }
+
+      .topbar-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 14px 24px;
+        max-width: var(--max);
+        margin: 0 auto;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+      }
+
+      .logo {
+        width: 36px;
+        height: 36px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, var(--brand), var(--brand-2));
+        box-shadow: 0 14px 30px rgba(124, 92, 255, 0.22);
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        color: var(--muted);
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      .nav a {
+        padding: 8px 10px;
+        border-radius: 10px;
+      }
+
+      .nav a:hover { background: var(--hover); color: var(--text); }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 14px;
+        border-radius: 12px;
+        border: 1px solid var(--border-strong);
+        background: var(--hover);
+        color: var(--text);
+        font-weight: 700;
+        font-size: 14px;
+        cursor: pointer;
+        transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
+      }
+
+      .btn:hover { transform: translateY(-1px); background: var(--hover-strong); border-color: rgba(127, 127, 127, 0.34); }
+
+      .btn.primary {
+        border: 1px solid rgba(72, 209, 255, 0.40);
+        background: linear-gradient(135deg, rgba(72, 209, 255, 0.22), rgba(124, 92, 255, 0.22));
+      }
+
+      .hero {
+        padding: 56px 0 26px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1.25fr 0.75fr;
+        gap: 26px;
+        align-items: stretch;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(30px, 4vw, 48px);
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+      }
+
+      .subtitle {
+        margin-top: 14px;
+        font-size: 16px;
+        color: var(--muted);
+        max-width: 60ch;
+      }
+
+      .bonus-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 12px;
+        border-radius: 999px;
+        border: 1px solid rgba(62, 240, 168, 0.28);
+        background: linear-gradient(135deg, rgba(62, 240, 168, 0.18), rgba(72, 209, 255, 0.14));
+        color: var(--text);
+        font-weight: 900;
+        letter-spacing: 0.02em;
+        width: fit-content;
+      }
+
+      .bonus-badge strong {
+        font-size: 14px;
+      }
+
+      .bonus-badge span {
+        font-size: 12px;
+        color: var(--muted);
+        font-weight: 700;
+      }
+
+      .note {
+        margin-top: 8px;
+        font-size: 12px;
+        color: var(--muted-2);
+      }
+
+      .action-guide {
+        margin-top: 14px;
+        padding: 14px 14px;
+        border-radius: 14px;
+        border: 1px solid rgba(62, 240, 168, 0.30);
+        background: linear-gradient(135deg, rgba(62, 240, 168, 0.14), rgba(72, 209, 255, 0.10));
+      }
+
+      .action-guide strong {
+        display: block;
+        font-size: 14px;
+        letter-spacing: -0.01em;
+      }
+
+      .action-guide span {
+        display: block;
+        margin-top: 6px;
+        font-size: 12px;
+        color: var(--muted);
+        font-weight: 650;
+      }
+
+      .hero-actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 18px;
+      }
+
+      .pillrow {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 18px;
+      }
+
+      .pill {
+        font-size: 12px;
+        color: var(--muted);
+        border: 1px solid var(--border);
+        padding: 7px 10px;
+        border-radius: 999px;
+        background: var(--panel);
+      }
+
+      .panel {
+        border: 1px solid var(--border);
+        background: var(--panel);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+      }
+
+      .panel-inner { padding: 18px; }
+
+      .stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .stat {
+        border-radius: 14px;
+        background: var(--panel);
+        border: 1px solid var(--border);
+        padding: 14px;
+        min-height: 88px;
+      }
+
+      .stat .k { font-weight: 800; font-size: 18px; letter-spacing: -0.01em; }
+      .stat .v { margin-top: 6px; color: var(--muted-2); font-size: 12px; }
+
+      .section { padding: 28px 0; }
+      .section h2 { margin: 0 0 12px; font-size: 22px; letter-spacing: -0.01em; }
+      .section p { margin: 0; color: var(--muted); }
+
+      .cards {
+        margin-top: 14px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+      }
+
+      .card {
+        padding: 16px;
+        border-radius: var(--radius);
+        background: var(--panel);
+        border: 1px solid var(--border);
+      }
+
+      .card h3 { margin: 0 0 6px; font-size: 15px; }
+      .card p { margin: 0; color: var(--muted-2); font-size: 13px; }
+
+      .cta {
+        padding: 20px;
+        border-radius: var(--radius);
+        border: 1px solid var(--border);
+        background: linear-gradient(135deg, rgba(72, 209, 255, 0.12), rgba(124, 92, 255, 0.12));
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+
+      .cta strong { font-size: 16px; }
+      .cta span { color: var(--muted); font-size: 13px; display: block; margin-top: 4px; }
+
+      footer {
+        padding: 30px 0 44px;
+        color: var(--muted-2);
+        font-size: 12px;
+      }
+
+      .fine {
+        margin-top: 10px;
+        color: rgba(255, 255, 255, 0.45);
+        max-width: 95ch;
+      }
+
+      @media (max-width: 920px) {
+        .grid { grid-template-columns: 1fr; }
+        .cards { grid-template-columns: 1fr; }
+        .stats { grid-template-columns: 1fr 1fr; }
+      }
+
+      @media (max-width: 520px) {
+        .topbar-inner { padding: 12px 16px; }
+        .container { padding: 18px; }
+        .stats { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="#top" aria-label="AirTM introduction page">
+          <span class="logo" aria-hidden="true"></span>
+          <span>AirTM Global</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="#what">Overview</a>
+          <a href="#why">Why AirTM</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#use-cases">Use cases</a>
+          <a href="#faq">FAQ</a>
+          <a href="#start">Next steps</a>
+        </nav>
+
+        <a class="btn primary" href="https://app.airtm.com/ivt/dfinemed2jhzbm67" target="_blank" rel="nofollow noopener">Get $1 Bonus</a>
+      </div>
     </header>
 
-    <div class="step-box">
-        <strong>🚀 Quick Start Guide:</strong><br>
-        1. Register via links below &rarr; 2. Complete KYC &rarr; 3. Earn $10 on Clickworker or deposit $5 on Airtm to trigger your bonuses!
-    </div>
+    <main id="top" class="container">
+      <section class="hero">
+        <div class="grid">
+          <div>
+            <div class="bonus-badge" aria-label="$1 bonus offer">
+              <strong>Get $1 BONUS</strong>
+              <span>via referral (eligible users)</span>
+            </div>
+            <h1>
+              Bridge Your Digital Wealth:
+              The Ultimate Hub for Global Payments.
+            </h1>
+            <p class="subtitle">
+              Move value across borders with confidence. AirTM connects 400+ payment methods into a single, modern experience—so you can deposit, convert (USD/Crypto), and withdraw with speed and transparency.
+            </p>
 
-    <div class="card">
-        <h2 style="color: #28a745;">Step 1: Earn Globally with Clickworker</h2>
-        <p>Start small tasks (AI training, surveys, copy editing) and get paid in USD/EUR. It's the most reliable way to start your digital income stream.</p>
-        <p class="highlight">🎁 Bonus: Get $5.00 once you earn your first $10.00!</p>
-        <a href="https://www.clickworker.com/clickworker?customer=false&utm_source=24354987&utm_campaign=CW4CW&utm_medium=email" class="btn btn-clickworker" target="_blank">Start Earning Now</a>
-    </div>
+            <div class="hero-actions">
+              <a class="btn primary" href="https://app.airtm.com/ivt/dfinemed2jhzbm67" target="_blank" rel="nofollow noopener">Claim $1 Bonus</a>
+              <a class="btn" href="#benefits">See benefits</a>
+            </div>
 
-    <div class="card">
-        <h2 style="color: #007bff;">Step 2: Manage & Withdraw with Airtm</h2>
-        <p>The best digital wallet to receive your Clickworker earnings and keep your wealth in USD. Protect your money from local currency inflation.</p>
-        <p class="highlight">🎁 Bonus: Get $1.00 USDC after your first small deposit!</p>
-        <a href="https://app.airtm.com/ivt/daisukef7094033" class="btn" target="_blank">Setup Your Wallet</a>
-    </div>
+            <div class="note">Bonus availability and eligibility may vary by region and account status.</div>
 
-    <div class="card">
-        <h3>❓ Frequently Asked Questions</h3>
-        
-        <div class="faq-item">
-            <strong>Q: Why do you recommend these two together?</strong><br>
-            A: Clickworker is for <em>earning</em>, and Airtm is for <em>managing and withdrawing</em>. Using them together creates a seamless workflow to build and protect your digital dollar balance.
+            <div class="action-guide" aria-label="Recommended first action">
+              <strong>Next step: Complete KYC → Try a small $5–$10 test deposit.</strong>
+              <span>Start small to learn the flow end-to-end (verification, deposit, conversion, and withdrawal options) before scaling.</span>
+            </div>
+
+            <div class="pillrow" aria-label="Highlights">
+              <span class="pill">400+ payment methods</span>
+              <span class="pill">Low fees</span>
+              <span class="pill">Instant USD/Crypto conversions</span>
+              <span class="pill">Built for global scale</span>
+            </div>
+          </div>
+
+          <aside class="panel" aria-label="Quick facts">
+            <div class="panel-inner">
+              <div class="stats">
+                <div class="stat">
+                  <div class="k">Send &amp; receive</div>
+                  <div class="v">Move value globally via a broad set of payment methods</div>
+                </div>
+                <div class="stat">
+                  <div class="k">Hold balances</div>
+                  <div class="v">Stay ready for payouts, payroll, and everyday spending</div>
+                </div>
+                <div class="stat">
+                  <div class="k">Work globally</div>
+                  <div class="v">Support contractors, creators, and remote teams</div>
+                </div>
+                <div class="stat">
+                  <div class="k">AI-readable</div>
+                  <div class="v">Clear structure for agents, tools, and content pipelines</div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="what" class="section">
+        <h2>AirTM, in one page</h2>
+        <p>
+          AirTM is a global payments platform that helps you move, convert, and access funds across borders.
+          It’s designed to be simple for humans and structured for AI agents.
+        </p>
+
+        <div class="cards" role="list">
+          <article class="card" role="listitem">
+            <h3>Multi-rail connectivity</h3>
+            <p>Bring deposits and withdrawals together across a wide range of payment methods.</p>
+          </article>
+          <article class="card" role="listitem">
+            <h3>Designed for clarity</h3>
+            <p>Transparent flows that make cross-border money movement easier to understand.</p>
+          </article>
+          <article class="card" role="listitem">
+            <h3>Composable documentation</h3>
+            <p>Easy to extend into FAQs, product pages, and agent-friendly summaries.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="benefits" class="section">
+        <h2>Benefits</h2>
+        <p>
+          Built for conversion and clarity—here are the three reasons most users start with AirTM.
+        </p>
+
+        <div class="cards" role="list">
+          <article class="card" role="listitem">
+            <h3>400+ payment methods</h3>
+            <p>Access a broad network of ways to deposit and withdraw, depending on your region.</p>
+          </article>
+          <article class="card" role="listitem">
+            <h3>Low fees</h3>
+            <p>Designed to keep costs competitive so more of your money stays with you.</p>
+          </article>
+          <article class="card" role="listitem">
+            <h3>Instant USD/Crypto conversions</h3>
+            <p>Convert value quickly to match your needs—whether you operate in USD or crypto.</p>
+          </article>
         </div>
 
-        <div class="faq-item">
-            <strong>Q: Are these services safe?</strong><br>
-            A: Yes. Both are used by millions globally. Clickworker has a long history of reliable payouts, and Airtm uses an escrow system to ensure your funds are always protected during P2P transfers.
+        <div style="margin-top: 14px;">
+          <a class="btn primary" href="https://app.airtm.com/ivt/dfinemed2jhzbm67" target="_blank" rel="nofollow noopener">Get $1 Bonus</a>
+          <div class="note">$1 bonus is subject to eligibility and may not be available in all regions.</div>
+        </div>
+      </section>
+
+      <section id="why" class="section">
+        <h2>Why AirTM matters</h2>
+        <p>
+          Cross-border payments are often slowed down by fragmentation: local rails, inconsistent access, and hidden costs.
+          AirTM is built to reduce that friction—so you can move money like the internet moves information.
+        </p>
+      </section>
+
+      <section id="earn" class="section">
+        <h2>Recommended Tool for Earning</h2>
+        <p>
+          Earn & Manage: Start with Clickworker to earn USD, then use AirTM to receive, convert, and withdraw your funds globally.
+        </p>
+
+        <div class="cards" role="list">
+          <article class="card" role="listitem">
+            <h3>Clickworker</h3>
+            <p>Complete micro-tasks and projects to earn USD. A flexible way to build income from anywhere.</p>
+            <div style="margin-top: 12px;">
+              <a class="btn primary" href="https://www.clickworker.com/clickworker?customer=false&utm_source=24354987&utm_campaign=CW4CW&utm_medium=email" target="_blank" rel="nofollow noopener">Register on Clickworker</a>
+            </div>
+          </article>
+          <article class="card" role="listitem">
+            <h3>AirTM</h3>
+            <p>Receive your Clickworker payouts, convert between USD/crypto, and withdraw with 400+ payment methods.</p>
+            <div style="margin-top: 12px;">
+              <a class="btn primary" href="https://app.airtm.com/ivt/dfinemed2jhzbm67" target="_blank" rel="nofollow noopener">Get $1 Bonus</a>
+            </div>
+          </article>
         </div>
 
-        <div class="faq-item">
-            <strong>Q: What is the first thing I should do?</strong><br>
-            A: Focus on "Identity Verification" (KYC) for both. Once verified, try a small $5-$10 test on either platform to get used to the system and unlock your bonuses.
+        <div class="action-guide" aria-label="Earn & Manage workflow">
+          <strong>Step 1: Register for Clickworker to start earning.</strong>
+          <span>Step 2: Use AirTM to manage and withdraw your funds.</span>
         </div>
-    </div>
+      </section>
 
-    <div class="note">
-        <p>Personal experience-based guide. Not an official site of Airtm or Clickworker.</p>
-        <p>&copy; 2026 Global Pay Project</p>
-    </div>
+      <section id="use-cases" class="section">
+        <h2>Common use cases</h2>
+        <div class="cards" role="list">
+          <article class="card" role="listitem">
+            <h3>Freelancers</h3>
+            <p>Get paid internationally and access funds locally when available.</p>
+          </article>
+          <article class="card" role="listitem">
+            <h3>Remote teams</h3>
+            <p>Coordinate payouts across countries and reduce payment friction.</p>
+          </article>
+          <article class="card" role="listitem">
+            <h3>AI agents & tooling</h3>
+            <p>Use a clean, structured overview as a reliable reference surface for agents.</p>
+          </article>
+        </div>
+      </section>
 
-</body>
+      <section id="start" class="section">
+        <h2>Get started in minutes</h2>
+        <div class="cta">
+          <div>
+            <strong>Ready to bridge your digital wealth?</strong>
+            <span>Use the referral link to register and claim a $1 bonus (eligible users).</span>
+          </div>
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <a class="btn primary" href="https://app.airtm.com/ivt/dfinemed2jhzbm67" target="_blank" rel="nofollow noopener">Claim $1 Bonus</a>
+            <a class="btn" href="#benefits">Why you’ll love it</a>
+          </div>
+        </div>
+
+        <div class="fine">
+          This page is optimized for clarity and quick scanning by both people and AI agents.
+          Next, add official product links, screenshots, and region-specific details for maximum conversion.
+        </div>
+      </section>
+
+      <section id="faq" class="section">
+        <hr style="border: 0; border-top: 1px solid var(--border); margin: 6px 0 18px;" />
+        <h3 style="color: #d32f2f; margin: 0 0 14px;">FAQ</h3>
+
+        <div class="card" style="margin-bottom: 14px;">
+          <p style="font-weight: 800; color: var(--text); margin: 0 0 6px;">Q. Why is an individual recommending this?</p>
+          <p style="margin: 0; color: var(--muted);">A. This is a personal, experience-based guide. I started using AirTM after running into real friction with cross-border transfers and limited options in traditional rails. I’m sharing what worked for me—especially for flexible funding and keeping small USD balances—so others can evaluate it quickly and safely.</p>
+        </div>
+
+        <div class="card" style="margin-bottom: 14px;">
+          <p style="font-weight: 800; color: var(--text); margin: 0 0 6px;">Q. Is KYC and funding safe?</p>
+          <p style="margin: 0; color: var(--muted);">A. Always follow official guidance and use standard security hygiene (strong passwords, 2FA, and verified identity steps). Many users prefer the P2P flow because it includes escrow-style protection: terms are confirmed and the process is mediated to reduce risk for both sides.</p>
+        </div>
+
+        <div class="card" style="margin-bottom: 14px;">
+          <p style="font-weight: 800; color: var(--text); margin: 0 0 6px;">Q. What should I do right after registration?</p>
+          <p style="margin: 0; color: var(--muted);">A. Complete KYC first. Then do a small $5–$10 test deposit using the method that’s easiest for you. Starting small helps you learn the full workflow (verification → funding → conversion → withdrawal options) with minimal risk.</p>
+        </div>
+
+        <div class="card" style="margin-bottom: 14px;">
+          <p style="font-weight: 800; color: var(--text); margin: 0 0 6px;">Q. Can I receive my Clickworker earnings via AirTM?</p>
+          <p style="margin: 0; color: var(--muted);">A. Yes! By connecting your payout method to AirTM, you can manage your earnings globally with lower fees.</p>
+        </div>
+
+        <p style="font-size: 0.9em; color: var(--muted-2); font-style: italic; margin: 0;">
+          If you get stuck on a specific step, revisit this guide page and proceed slowly—small test amounts first.
+        </p>
+      </section>
+
+      <footer>
+        <div>© <span id="y"></span> AirTM Global</div>
+        <div class="fine">Informational content only. Add official terms, disclosures, and product links as appropriate.</div>
+        <div class="fine">Personal guide, not an official site.</div>
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById('y').textContent = String(new Date().getFullYear());
+    </script>
+  </body>
 </html>
