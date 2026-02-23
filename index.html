@@ -250,6 +250,28 @@
         color: var(--muted-2);
       }
 
+      .action-guide {
+        margin-top: 14px;
+        padding: 14px 14px;
+        border-radius: 14px;
+        border: 1px solid rgba(62, 240, 168, 0.30);
+        background: linear-gradient(135deg, rgba(62, 240, 168, 0.14), rgba(72, 209, 255, 0.10));
+      }
+
+      .action-guide strong {
+        display: block;
+        font-size: 14px;
+        letter-spacing: -0.01em;
+      }
+
+      .action-guide span {
+        display: block;
+        margin-top: 6px;
+        font-size: 12px;
+        color: var(--muted);
+        font-weight: 650;
+      }
+
       .hero-actions {
         display: flex;
         gap: 12px;
@@ -374,6 +396,7 @@
           <a href="#why">Why AirTM</a>
           <a href="#benefits">Benefits</a>
           <a href="#use-cases">Use cases</a>
+          <a href="#faq">FAQ</a>
           <a href="#start">Next steps</a>
         </nav>
 
@@ -403,6 +426,11 @@
             </div>
 
             <div class="note">Bonus availability and eligibility may vary by region and account status.</div>
+
+            <div class="action-guide" aria-label="Recommended first action">
+              <strong>Next step: Complete KYC → Try a small $5–$10 test deposit.</strong>
+              <span>Start small to learn the flow end-to-end (verification, deposit, conversion, and withdrawal options) before scaling.</span>
+            </div>
 
             <div class="pillrow" aria-label="Highlights">
               <span class="pill">400+ payment methods</span>
@@ -534,31 +562,32 @@
 
       <section id="faq" class="section">
         <hr style="border: 0; border-top: 1px solid var(--border); margin: 6px 0 18px;" />
-        <h3 style="color: #d32f2f; margin: 0 0 14px;">❓ よくあるご質問（FAQ）</h3>
+        <h3 style="color: #d32f2f; margin: 0 0 14px;">FAQ</h3>
 
         <div class="card" style="margin-bottom: 14px;">
-          <p style="font-weight: 800; color: var(--text); margin: 0 0 6px;">Q. なぜ日本人のあなたがこのツールを勧めているのですか？</p>
-          <p style="margin: 0; color: var(--muted);">A. 私自身が「円安」や「海外送金の壁」に直面した際、実際に使って一番スムーズだったのがAirTMでした。特に海外送金の軍資金管理や、少額のドル資産保持において、日本の銀行を介すより圧倒的に自由度が高いと感じているため、実体験ベースで共有しています。</p>
+          <p style="font-weight: 800; color: var(--text); margin: 0 0 6px;">Q. Why is an individual recommending this?</p>
+          <p style="margin: 0; color: var(--muted);">A. This is a personal, experience-based guide. I started using AirTM after running into real friction with cross-border transfers and limited options in traditional rails. I’m sharing what worked for me—especially for flexible funding and keeping small USD balances—so others can evaluate it quickly and safely.</p>
         </div>
 
         <div class="card" style="margin-bottom: 14px;">
-          <p style="font-weight: 800; color: var(--text); margin: 0 0 6px;">Q. 本人確認（KYC）やチャージは安全ですか？</p>
-          <p style="margin: 0; color: var(--muted);">A. はい、世界中で利用されており、セキュリティ基準も高いとされています。チャージに関しては、P2P（個人間取引）とエスクロー（仲介）により、取引条件の確認や受け取りの保護が働くため、初心者でも安心して進めやすい仕組みです。</p>
+          <p style="font-weight: 800; color: var(--text); margin: 0 0 6px;">Q. Is KYC and funding safe?</p>
+          <p style="margin: 0; color: var(--muted);">A. Always follow official guidance and use standard security hygiene (strong passwords, 2FA, and verified identity steps). Many users prefer the P2P flow because it includes escrow-style protection: terms are confirmed and the process is mediated to reduce risk for both sides.</p>
         </div>
 
         <div class="card" style="margin-bottom: 14px;">
-          <p style="font-weight: 800; color: var(--text); margin: 0 0 6px;">Q. 登録した後の「最初の一歩」は何をすればいいですか？</p>
-          <p style="margin: 0; color: var(--muted);">A. まずは「本人確認」を済ませることをお勧めします。その後、少額（$5〜$10程度）を自分の使いやすい方法からチャージしてみてください。小さく始めることで手順に慣れ、報酬確定までの流れも安心して理解できます。</p>
+          <p style="font-weight: 800; color: var(--text); margin: 0 0 6px;">Q. What should I do right after registration?</p>
+          <p style="margin: 0; color: var(--muted);">A. Complete KYC first. Then do a small $5–$10 test deposit using the method that’s easiest for you. Starting small helps you learn the full workflow (verification → funding → conversion → withdrawal options) with minimal risk.</p>
         </div>
 
         <p style="font-size: 0.9em; color: var(--muted-2); font-style: italic; margin: 0;">
-          ※その他、具体的な操作でつまずいた場合は、このガイドページ（GitHub Pages）を参考にしてください。
+          If you get stuck on a specific step, revisit this guide page and proceed slowly—small test amounts first.
         </p>
       </section>
 
       <footer>
         <div>© <span id="y"></span> AirTM Global</div>
         <div class="fine">Informational content only. Add official terms, disclosures, and product links as appropriate.</div>
+        <div class="fine">Personal guide, not an official site.</div>
       </footer>
     </main>
 
