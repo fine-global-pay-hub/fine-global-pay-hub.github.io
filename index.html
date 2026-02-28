@@ -166,6 +166,8 @@
         --max: 1120px;
         --grid-pattern: radial-gradient(circle, rgba(72, 209, 255, 0.1) 1px, transparent 1px);
         --monitor-glow: rgba(72, 209, 255, 0.2);
+        --emergency-red: #ff0000;
+        --warning-pattern: repeating-linear-gradient(45deg, rgba(255, 255, 0, 0.1), rgba(255, 255, 0, 0.1) 10px, rgba(0, 0, 0, 0.1) 10px, rgba(0, 0, 0, 0.1) 20px);
       }
 
       @media (prefers-color-scheme: light) {
@@ -188,6 +190,8 @@
           --shadow: 0 16px 45px rgba(0, 0, 0, 0.12);
           --grid-pattern: radial-gradient(circle, rgba(124, 92, 255, 0.08) 1px, transparent 1px);
           --monitor-glow: rgba(72, 209, 255, 0.15);
+          --emergency-red: #ff0000;
+          --warning-pattern: repeating-linear-gradient(45deg, rgba(255, 255, 0, 0.1), rgba(255, 255, 0, 0.1) 10px, rgba(0, 0, 0, 0.1) 10px, rgba(0, 0, 0, 0.1) 20px);
         }
       }
 
@@ -280,6 +284,70 @@
 
       .btn:hover { transform: translateY(-1px); background: var(--hover-strong); border-color: rgba(127, 127, 127, 0.34); }
 
+      /* Emergency Alert Bar */
+      .emergency-alert-bar {
+        background: var(--emergency-red);
+        background-image: var(--warning-pattern);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        padding: 8px 0;
+        text-align: center;
+        font-weight: 700;
+        font-size: 14px;
+        color: white;
+        box-shadow: 0 4px 20px rgba(255, 0, 0, 0.5);
+        border-bottom: 2px solid #cc0000;
+      }
+
+      .emergency-alert-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+
+      .emergency-alert-main {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        animation: emergency-blink 1s infinite;
+      }
+
+      @keyframes emergency-blink {
+        0%, 50%, 100% { opacity: 1; }
+        25%, 75% { opacity: 0.3; }
+      }
+
+      .emergency-alert-message {
+        font-size: 13px;
+        font-weight: 600;
+        opacity: 0.95;
+      }
+
+      @media (max-width: 768px) {
+        .emergency-alert-bar {
+          font-size: 12px;
+          padding: 10px 0;
+        }
+        
+        .emergency-alert-content {
+          flex-direction: column;
+          gap: 8px;
+          text-align: center;
+        }
+        
+        .emergency-alert-message {
+          font-size: 11px;
+        }
+      }
+
       /* Live Status Bar */
       .live-status-bar {
         background: rgba(0, 0, 0, 0.8);
@@ -288,6 +356,7 @@
         padding: 12px 0;
         position: relative;
         overflow: hidden;
+        margin-top: 40px; /* Space for emergency alert */
       }
 
       .live-status-bar::before {
@@ -651,6 +720,18 @@
         <a class="btn primary" href="https://app.airtm.com/ivt/dfinemed2jhzbm67" target="_blank" rel="nofollow noopener">Get $1 Bonus</a>
       </div>
     </header>
+
+    <!-- Emergency Alert Bar -->
+    <div class="emergency-alert-bar">
+      <div class="emergency-alert-content">
+        <div class="emergency-alert-main">
+          🚨 GEOPOLITICAL ALERT: CONFLICT DETECTED IN MIDDLE EAST
+        </div>
+        <div class="emergency-alert-message">
+          Move funds to Digital Wallets while liquidity is STABLE.
+        </div>
+      </div>
+    </div>
 
     <!-- Live Status Bar -->
     <div class="live-status-bar">
